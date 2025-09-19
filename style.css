@@ -24,7 +24,6 @@ header {
   justify-content: space-around;
   background-color: beige;
   position: relative;
-  padding: 10px 20px;
 }
 
 header a {
@@ -46,7 +45,8 @@ nav ul{
 
 
 .apresentacao {
-  margin-top: 20px;
+  padding-top: 20px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -57,20 +57,33 @@ nav ul{
 }
 
 .apresentacao figure {
+  background-color: beige;
   margin-right: 200px;
-  width: 400px;
+  width: 420px;
+  border-radius: 10px;
 }
 
 .apresentacao figure img {
+  margin: 10px 0 0 10px;
   width: 400px;
   border-radius: 10px;
 }
 
+.apresentacao figure figcaption {
+  margin: 10px 0 0 10px;
+}
+
 .regiao {
-  margin: 20px;
+  padding-top: 20px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.regiao h1 {
+  margin: 0;
+  font-size: 2rem;
 }
 
 .regiao-grid {
@@ -85,4 +98,18 @@ nav ul{
   background-color: aliceblue;
   border-radius: 10px;
   width: 430px;
+}
+
+.regiao-grid article img {
+  width: 400px;
+  margin: 15px 0 0 15px ;
+  border-radius: 10px;
+}
+
+.regiao-grid article h3 {
+  margin: 5px 0 0 15px;
+}
+
+.regiao-grid article p {
+  margin: 5px 0 15px 15px;
 }
