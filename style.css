@@ -1,7 +1,7 @@
 body {
 margin:0;
 padding: 0;
-font-family: Inter, Roboto, Arial;
+font-family: Roboto, Inter, Arial,sans-serif;
 background-color: burlywood;
 }
 
@@ -22,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: beige;
+  background-color: rgb(224, 224, 200);
   position: relative;
 }
 
@@ -57,9 +57,9 @@ nav ul{
 }
 
 .apresentacao figure {
-  background-color: beige;
+  background-color: white;
   margin-right: 200px;
-  width: 420px;
+  width: 432px;
   border-radius: 10px;
 }
 
@@ -87,8 +87,8 @@ nav ul{
 }
 
 .regiao-grid {
-  margin-top: 20px;
   display: grid;
+  margin-top: 20px;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
   gap: 1.5rem;
@@ -102,6 +102,7 @@ nav ul{
 
 .regiao-grid article img {
   width: 400px;
+  height: 250px;
   margin: 15px 0 0 15px ;
   border-radius: 10px;
 }
@@ -112,4 +113,58 @@ nav ul{
 
 .regiao-grid article p {
   margin: 5px 0 15px 15px;
+}
+
+footer {
+  background-color: #364452;
+  color: #ecf0f1;
+  padding: 5px 0;
+  margin-top: 30px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 15px;
+}
+.footer-section h4 {
+  border-bottom: 1.5px solid burlywood;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.footer-section p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.footer-section li {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a{
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3 ease;
+}
+
+.footer-section a:hover {
+  color: #3498db;
 }
