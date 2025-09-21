@@ -1,7 +1,7 @@
 body {
 margin:0;
 padding: 0;
-font-family: Roboto, Inter, Arial,sans-serif;
+font-family: "Roboto Serif","Arial", sans-serif;
 background-color: burlywood;
 }
 
@@ -107,6 +107,7 @@ nav ul{
   background-color: aliceblue;
   border-radius: 10px;
   width: 460px;
+  height: 480px;
 }
 
 .regiao-grid article img {
@@ -202,16 +203,12 @@ footer {
   padding: 0 20px;
 }
 
-.footer-section * {
-  margin: 0.8rem;
-}
-
 .footer-section {
   flex: 1;
   min-width: 250px;
   padding: 0 0 0 30px;
 }
-.footer-section h4 {
+.footer-section h3 {
   border-bottom: 1.5px solid burlywood;
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -219,11 +216,13 @@ footer {
 }
 
 .footer-section p {
+  margin: 0.8rem;
   font-size: 1rem;
   line-height: 1.6;
 }
 
 .footer-section li {
+  margin: 0.8rem;
   font-size: 1rem;
   line-height: 1.6;
 }
