@@ -43,28 +43,33 @@ nav ul{
   list-style-type: none;
 }
 
+li a {
+  font-weight: bold;
+}
 
-.apresentacao {
+
+.presentation {
   padding-top: 40px;
   margin-top: 50px;
+  gap: 200px;
   display: flex;
   justify-content: space-around;
 }
 
-.apresentacao h2 {
+.presentation h2 {
   font-size: 2rem;
 }
 
-.apresentacao p {
+.presentation p {
   font-size: 1.2rem;
 }
 
-.apresentacao div {
+.presentation div {
   margin-left: 200px;
   width: 700px;
 }
 
-.apresentacao figure {
+.presentation figure {
   background-color: white;
   margin-right: 200px;
   width: 432px;
@@ -72,17 +77,17 @@ nav ul{
   border-radius: 10px;
 }
 
-.apresentacao figure img {
+.presentation figure img {
   margin: 10px 0 0 10px;
   width: 410px;
   border-radius: 10px;
 }
 
-.apresentacao figure figcaption {
+.presentation figure figcaption {
   margin: 10px 0 0 10px;
 }
 
-.regiao {
+.region {
   padding-top: 40px;
   margin-top: 30px;
   display: flex;
@@ -90,12 +95,12 @@ nav ul{
   align-items: center;
 }
 
-.regiao h1 {
+.region h1 {
   margin: 0;
   font-size: 2rem;
 }
 
-.regiao-grid {
+.region-grid {
   display: grid;
   margin-top: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -103,25 +108,25 @@ nav ul{
   gap: 1.5rem;
 }
 
-.regiao-grid article {
+.region-grid article {
   background-color: aliceblue;
   border-radius: 10px;
   width: 460px;
   height: 480px;
 }
 
-.regiao-grid article img {
+.region-grid article img {
   width: 430px;
   height: 250px;
   margin: 15px 0 0 15px ;
   border-radius: 10px;
 }
 
-.regiao-grid article h3 {
+.region-grid article h3 {
   margin: 5px 0 0 15px;
 }
 
-.regiao-grid article p {
+.region-grid article p {
   margin: 5px 0 15px 15px;
 }
 
@@ -161,30 +166,101 @@ nav ul{
   margin: 0 10px 0 15px;
 }
 
+.forms {
+  margin-top: 30px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.forms-elements {
+  background-color: #ecf0f1;
+  width: 1440px;
+  height: 450px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
 
+.elements {
+  display: flex;
+  flex-direction: row;
+}
 
+.element {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  margin-left: 45px;
+  gap: 10px;
+  font-size: 1.1rem;
+}
 
+#email {
+  margin-left: 20px;
+}
 
+.manifestation {
+  margin: 40px 0 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
+.element input {
+  padding-left: 15px !important;
+  font-size: 1rem;
+  background-color: #ecf0f1;
+  border: 1px solid;
+  padding: 0;
+  width: 640px;
+  height: 40px;
+  border-radius: 8px;
+}
 
+.element select {
+  padding-left: 10px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  width: 660px;
+  height: 40px;
+  border-radius: 8px;
+}
 
+#description {
+  width: 1340px;
+}
 
+#description textarea {
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-left: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  height: 120px;
+  resize: none;
+}
 
+.form-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+  height: 35px;
+  margin: 10px 55px 0 0;
+}
 
+.form-actions button {
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 8px;
+  width: 70px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#submit {
+  background-color: red;
+  color: #fff;
+}
 
 footer {
   background-color: #364452;

@@ -18,16 +18,16 @@
 
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#regiao">Regiões</a></li>
-        <li><a href="#evento">Eventos</a></li>
-        <li><a href="contato">Contato</a></li>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#region">Regiões</a></li>
+        <li><a href="#events">Eventos</a></li>
+        <li><a href="#forms">Contato</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="inicio" class="apresentacao">
+    <section id="home" class="presentation">
       <div>
         <h2>Apresentação do Projeto</h2>
         <p>O Mapa Cultural Interativo do Piauí é uma iniciativa criada para registrar, divulgar e facilitar o acesso às
@@ -48,11 +48,11 @@
       </figure>
     </section>
 
-    <section id="regiao" class="regiao">
+    <section id="region" class="region">
 
       <h1>Regiões Culturais</h1>
 
-      <div class="regiao-grid">
+      <div class="region-grid">
         <article>
           <img src="img/Luis Correia.png" alt="">
           <h3>Luis Correia</h3>
@@ -139,41 +139,51 @@
     <section id="forms" class="forms">
       <h2>Formulário de Sugestão Cultural</h2>
 
-      <form action="">
-        <div class="form">
-          <div>
+      <form class="forms-elements">
+        <div class="elements">
+          <div class="element">
             <label for="nome">Nome completo</label>
             <input name="nome" type="text" placeholder="Seu nome completo">
           </div>
-          <div>
+          <div id="email" class="element">
             <label for="email">E-mail</label>
             <input name="email" type="email" placeholder="seu@exemplo.com">
           </div>
+        </div>
 
-          <div class="form">
-            <div>
-              <label for="municipio">município</label>
+          <div class="elements">
+            <div class="element">
+              <label for="municipio">Município</label>
               <select name="municipio" id="municipio">
                 <option value="">Selecione um município</option>
-                <option >Teresina</option>
-                <option >Picos</option>
-                <option >Parnaíba</option>
-                <option >Oeiras</option>
-                <option >Bom Jesus</option>
+                <option>Teresina</option>
+                <option>Picos</option>
+                <option>Parnaíba</option>
+                <option>Oeiras</option>
+                <option>Bom Jesus</option>
               </select>
             </div>
-            <div>
+            <div class="manifestation">
               <label>Tipo de manifestação</label>
               <div>
-                <labe><input type="text"></labe>
-                <labe><input type="text"></labe>
-                <labe><input type="text"></labe>
-                <labe><input type="text"></labe>
+                <labe><input type="checkbox" value="musica"> Música</labe>
+                <labe><input type="checkbox" value="danca"> Dança</labe>
+                <labe><input type="checkbox" value="comida"> Comida</labe>
+                <labe><input type="checkbox" value="artesanato"> Artesanato</labe>
               </div>
             </div>
           </div>
-      </form>
 
+          <div id="description" class="element">
+            <label for="descricao">Descrição Livre</label>
+            <textarea cols="40" name="descricao" id="descricao" placeholder="Conte mais sobre a manifestação: origem, elementos, contatos..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="reset">Limpar</button>
+            <button id="submit" type="submit">Enviar</button>
+          </div>
+      </form>
     </section>
 
 
