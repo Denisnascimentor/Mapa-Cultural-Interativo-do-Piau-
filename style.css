@@ -351,7 +351,87 @@ footer {
   color: #3498db;
 }
 
+@media(max-width: 1700px) {
+
+  .presentation {
+    margin:  0 0 0 15px;
+  }
+
+  .presentation div h2 {
+    text-align: center;
+  }
+
+  .presentation div {
+    margin: 0;
+    padding:  0 0 0 15px;
+    width: 82%;
+  }
+
+  .presentation figure {
+    width: 60%;
+    height: auto;
+    margin:  10px 15px 0 0;
+  }
+
+  .presentation figure img {
+    width: 90%;
+  }
+
+  .presentation figure figcaption {
+    padding:  0 20px 0 15px;
+  }
+
+  .region {
+    width: 100%;
+  }
+
+  .region-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .region-grid article img {
+    margin: 10px 0 0 10px;
+    width: 95%;
+  }
+
+  .event-card {
+    width: 40%;
+  }
+
+  .forms-elements {
+    width: 82%;
+  }
+
+  .element {
+    width: 90%;
+  }
+
+  .element #municipio {
+    width: 97%;
+  }
+
+  .element input {
+    width: 90%;
+  }
+
+  #select {
+    width: 45%;
+  }
+
+  #description {
+    width: 90%;
+  }
+  .element textarea {
+    width: 100%;
+  }
+
+  .form-actions {
+    margin:  10px 25px 0 0;
+  }
+}
+
 @media(max-width: 767px) {
+
   header {
     padding: 10px 0;
     display: flex;
@@ -433,7 +513,7 @@ footer {
   }
 
   .event-card {
-    width: 220px;
+    width: 250px;
     height: 350px;
     padding: 15px;
   }
@@ -476,6 +556,4 @@ footer {
   .form-actions {
     margin: 0 25px 0;
   }
-
-
 }
