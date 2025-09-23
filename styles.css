@@ -22,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(224, 224, 200);
+  background-color: #e0e0c8;
   position: relative;
 }
 
@@ -45,6 +45,7 @@ nav ul {
 
 li a {
   font-weight: bold;
+  color: #b7412e;
 }
 
 
@@ -65,6 +66,7 @@ li a {
 }
 
 .presentation p {
+  text-align: justify;
   font-size: 1.2rem;
 }
 
@@ -76,7 +78,7 @@ li a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: #fff;
   width: 430px;
   height: 300px;
   border-radius: 10px;
@@ -85,6 +87,7 @@ li a {
 
 .presentation figure img {
   width: 400px;
+  height: 200px;
   border-radius: 10px;
   margin: 20px 0 0 0;
 }
@@ -115,7 +118,7 @@ li a {
 }
 
 .region-grid article {
-  background-color: aliceblue;
+  background-color: #fff;
   border-radius: 10px;
   width: 400px;
   height: 420px;
@@ -137,7 +140,9 @@ li a {
 }
 
 .region-grid article p {
-  margin: 5px 0 15px 15px;
+  text-align: justify;
+  margin: 5px 5px 15px 15px;
+  padding-right: 10px;
 }
 
 .events {
@@ -151,20 +156,6 @@ li a {
   justify-content: center;
 }
 
-/* .events-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.event-card {
-  background-color: #ecf0f1;
-  width: 300px;
-  height: 260px;
-  border-radius: 10px;
-} */
-
 .events-cards {
   display: flex;
   flex-wrap: wrap;
@@ -174,10 +165,9 @@ li a {
 
 .event-card {
   width: 300px;
-  background: #f5f5f5;
+  background: #fff;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
@@ -186,12 +176,14 @@ li a {
 }
 
 .event-card h4 {
+  color: #6b6b6b;
   margin: 0 0 0 15px;
 }
 
 .event-card p {
   font-size: 1.1rem;
   margin: 20px 10px 0 15px;
+  text-align: justify;
 }
 
 .forms {
@@ -207,7 +199,7 @@ li a {
 }
 
 .forms-elements {
-  background-color: #ecf0f1;
+  background-color: #fff;
   width: 1250px;
   height: 450px;
   border-radius: 10px;
@@ -243,7 +235,7 @@ li a {
 .element input {
   padding-left: 15px !important;
   font-size: 1rem;
-  background-color: #ecf0f1;
+  background-color: #fff;
   border: 1px solid;
   padding: 0;
   width: 555px;
@@ -268,7 +260,7 @@ li a {
   font-size: 1rem;
   padding-top: 10px;
   padding-left: 15px;
-  background-color: #ecf0f1;
+  background-color: #fff;
   border-radius: 8px;
   height: 120px;
   resize: none;
@@ -351,7 +343,7 @@ footer {
   color: #3498db;
 }
 
-@media(max-width: 1700px) {
+@media(max-width: 1024px) {
 
   .presentation {
     margin:  0 0 0 15px;
@@ -369,11 +361,12 @@ footer {
 
   .presentation figure {
     width: 60%;
-    height: auto;
+    height: 350px;
     margin:  10px 15px 0 0;
   }
 
   .presentation figure img {
+    height: 75%;
     width: 90%;
   }
 
